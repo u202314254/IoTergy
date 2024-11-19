@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #eef2ff, #e0f7fa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background-color: #857BFF;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: white;
+}
+
+.logo-header {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo-header h1 {
+    font-size: 24px;
+    margin-right: 0.5rem;
+}
+
+.logo-header span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-back-home {
+    background-color: #fff;
+    color: #857BFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-back-home:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #857BFF;
+    margin: 0;
+}
+
+.logo h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #857BFF;
+    margin: 0.5rem 0;
+}
+
+/* Encabezado */
+h3 {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Formulario */
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease;
+}
+
+.form input:focus {
+    box-shadow: 0 0 6px rgba(133, 123, 255, 0.5);
+}
+
+.btn-register {
+    background-color: #9FFFA5;
+    border: none;
+    padding: 12px;
+    color: #000;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-register:hover {
+    background-color: #8ff098;
+    transform: scale(1.03);
+}
+
+/* Términos y login */
+.terms, .login {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 1rem;
+}
+
+.terms a, .login a {
+    color: #857BFF;
+    text-decoration: none;
+}
+
+.terms a:hover, .login a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-back-home {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOTERGY - Gestión de dispositivos</title>
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+<body>
+    <header class="header">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1>IOTERGY</h1>
+    </header>
+
+    <!-- Menú lateral (sidebar) -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-menu" onclick="toggleMenu()">✖</button>
+        <ul class="menu-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Mi perfil</a></li>
+            <li><a href="#">Registro de dispositivos</a></li>
+            <li><a href="#">Consumo</a></li>
+        </ul>
+        <div class="menu-icons">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Ayuda</a>
+        </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="content">
+        <nav class="tabs">
+            <button class="tab-button active" onclick="showSection('perfil')">Mi perfil</button>
+            <button class="tab-button" onclick="showSection('dispositivos')">Mis dispositivos</button>
+        </nav>
+
+        <!-- Secciones -->
+        <section id="perfil" class="section active">
+            <h2>Mi perfil</h2>
+            <form>
+                <label>Nombre</label>
+                <input type="text" value="">
+                <label>Edad</label>
+                <input type="text" value="">
+                <label>Correo</label>
+                <input type="email" value="">
+                <label>Usa la app para:</label>
+                <input type="text" value="">
+            </form>
+        </section>
+
+        <section id="dispositivos" class="section">
+            <h2>Mis dispositivos</h2>
+            <ul class="device-list">
+                <li>
+                    <h3>Lavadora</h3>
+                    <p>Categoría: Electrodoméstico de Cocina</p>
+                    <button>Editar</button>
+                </li>
+                <li>
+                    <h3>Televisor</h3>
+                    <p>Categoría: Electrónica de Entretenimiento</p>
+                    <button>Editar</button>
+                </li>
+                <li>
+                    <h3>Refrigerador</h3>
+                    <p>Categoría: Electrodoméstico de Cocina</p>
+                    <button>Editar</button>
+                </li>
+                <li>
+                    <h3>Aspiradora</h3>
+                    <p>Categoría: Electrodoméstico de Limpieza</p>
+                    <button>Editar</button>
+                </li>
+            </ul>
+            <button class="add-device-button">Registrar un nuevo dispositivo</button>
+        </section>
+    </main>
+
+    <script src="scripts/services.js"></script>
+</body>
+</html>
